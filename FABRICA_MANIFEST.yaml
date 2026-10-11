@@ -1,0 +1,35 @@
+fabrica:
+  product: runtime
+  canonical_name: Fabrica Runtime
+  id: FAB.RUNTIME
+  portfolio_family: FABRICA
+  maturity: F0_BOOTSTRAP
+  target_maturity: F2_OPERATIONAL_ALPHA
+  mission: >-
+    Capability-centric runtime for building, exposing, composing and operating
+    computational functions across human interfaces, APIs, workflows and agents.
+
+lineage:
+  type: derivative
+  upstream_repository: gradio-app/gradio
+  upstream_base_commit: 526c24340024dfae9c9a7709aad552382ed99f86
+  upstream_license: Apache-2.0
+  affiliation: independent
+
+authority:
+  source_code: github
+  project_intelligence: google_drive
+
+invariants:
+  - FR-INV-001-working-repository
+  - FR-INV-002-provenance
+  - FR-INV-003-product-identity
+  - FR-INV-004-git-authority
+  - FR-INV-005-drive-authority
+  - FR-INV-006-progressive-mutation
+  - FR-INV-007-no-false-authorship
+  - FR-INV-008-portfolio-coherence
+
+release:
+  current: bootstrap
+  next: v0.1.0-alpha
