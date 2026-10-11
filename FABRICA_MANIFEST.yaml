@@ -3,7 +3,7 @@ fabrica:
   canonical_name: Fabrica Runtime
   id: FAB.RUNTIME
   portfolio_family: FABRICA
-  maturity: F0_BOOTSTRAP
+  maturity: F1_CANDIDATE
   target_maturity: F2_OPERATIONAL_ALPHA
   mission: >-
     Capability-centric runtime for building, exposing, composing and operating
@@ -20,6 +20,17 @@ authority:
   source_code: github
   project_intelligence: google_drive
 
+current_architecture:
+  public_namespace: fabrica
+  substrate: gradio
+  package_version: 0.1.0a0
+
+verification:
+  smoke_tests_present: true
+  ci_definition_present: true
+  ci_success_observed: false
+  release_tagged: false
+
 invariants:
   - FR-INV-001-working-repository
   - FR-INV-002-provenance
@@ -31,5 +42,5 @@ invariants:
   - FR-INV-008-portfolio-coherence
 
 release:
-  current: bootstrap
+  current: f1-candidate
   next: v0.1.0-alpha
