@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fabrica-runtime"
+version = "0.1.0a0"
+description = "Fabrica Runtime — capability interface and orchestration runtime"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Fabrica Runtime contributors" }]
+dependencies = ["gradio>=6.28,<7"]
+
+[project.urls]
+Homepage = "https://github.com/Ivan-Pasev/fabrica-runtime"
+Repository = "https://github.com/Ivan-Pasev/fabrica-runtime"
+
+[tool.hatch.build.targets.wheel]
+packages = ["fabrica"]
