@@ -3,7 +3,7 @@ fabrica:
   canonical_name: Fabrica Runtime
   id: FAB.RUNTIME
   portfolio_family: FABRICA
-  maturity: F1_CANDIDATE
+  maturity: F1_FABRICATED
   target_maturity: F2_OPERATIONAL_ALPHA
   mission: >-
     Capability-centric runtime for building, exposing, composing and operating
@@ -28,7 +28,12 @@ current_architecture:
 verification:
   smoke_tests_present: true
   ci_definition_present: true
-  ci_success_observed: false
+  ci_success_observed: true
+  ci_python:
+    - "3.10"
+    - "3.11"
+    - "3.12"
+  ci_run_id: 38161135348
   release_tagged: false
 
 invariants:
@@ -42,5 +47,5 @@ invariants:
   - FR-INV-008-portfolio-coherence
 
 release:
-  current: f1-candidate
+  current: f1-fabricated
   next: v0.1.0-alpha
