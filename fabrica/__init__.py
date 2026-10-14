@@ -18,3 +18,5 @@ UPSTREAM_RUNTIME = "gradio"
 def upstream_version() -> str:
     """Return the active Gradio substrate version."""
     return getattr(_gradio, "__version__", "unknown")
+
+from .capability import CapabilitySpec, PortSpec, capability, get_capability_spec, is_capability
