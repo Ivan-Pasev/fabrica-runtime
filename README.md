@@ -1,8 +1,8 @@
 # Fabrica Runtime
 
-**Fabrica Runtime** is the open-source capability interface and orchestration runtime of the Fabrica / Digital Fabrica product family.
+**Fabrica Runtime** is an experimental Python capability interface and Gradio-backed runtime facade in the Fabrica / Digital Fabrica product family.
 
-> Status: **F1 candidate**. The Fabrica package surface, smoke tests, CI definition, community files, and local example are now present. Promotion to **F1 — Fabricated** is gated on the first successful GitHub Actions run.
+> Status: **F1 — Fabricated (historical promotion evidence)**. CI run `38161135348` and promotion-commit confirmation run `38629518114` were recorded as successful for F1. The current `main` head contains additional native capability code; its CI result and F2 qualification have **not** been independently reverified in this documentation update. No tagged `v0.1.0-alpha` release is claimed.
 
 ## Mission
 
@@ -23,7 +23,7 @@ Then build applications against the Fabrica namespace:
 import fabrica as fab
 ```
 
-The current alpha facade delegates to Gradio internally while keeping the public product surface under Fabrica.
+The current alpha facade imports the separately installed `gradio>=6.28,<7` package while adding first-party `PortSpec`, `CapabilitySpec` and `@fab.capability` metadata. These primitives are an initial native semantic layer, not a verified capability graph, security sandbox or F2 operational release.
 
 ## Current architecture
 
@@ -43,9 +43,9 @@ See `ARCHITECTURE.md` for the mutation path toward a Fabrica-native capability a
 
 ## Lineage
 
-Fabrica Runtime is an independent derivative project whose initial implementation substrate is derived from [gradio-app/gradio](https://github.com/gradio-app/gradio), licensed under the Apache License 2.0.
+Fabrica Runtime is a **dependency adapter / facade**, not a demonstrated full-source fork of [gradio-app/gradio](https://github.com/gradio-app/gradio). Gradio is installed as a separate dependency and is licensed under Apache-2.0. The inspected Gradio commit is a source-reference anchor, **not evidence that its source tree was imported**.
 
-Fabrica Runtime is not affiliated with or endorsed by the Gradio or Hugging Face teams. Upstream attribution and applicable notices are preserved.
+Fabrica Runtime is not affiliated with or endorsed by Gradio or Hugging Face. See `UPSTREAM.md` and `NOTICE-DERIVATIVE.md` for attribution and historical provenance; the latter retains its original filename for link continuity.
 
 ## Development model
 
