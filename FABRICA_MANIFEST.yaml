@@ -10,7 +10,9 @@ fabrica:
     computational functions across human interfaces, APIs, workflows and agents.
 
 lineage:
-  type: derivative
+  type: dependency_adapter
+  source_relation: DEPENDENCY_ADAPTER
+  imported_source_baseline: NOT_OBSERVED_IN_CURRENT_TREE
   upstream_repository: gradio-app/gradio
   upstream_base_commit: 526c24340024dfae9c9a7709aad552382ed99f86
   upstream_license: Apache-2.0
@@ -34,6 +36,8 @@ verification:
     - "3.11"
     - "3.12"
   ci_run_id: 38161135348
+  ci_evidence_scope: HISTORICAL_F1_PROMOTION
+  current_head_ci: NOT_REVERIFIED
   release_tagged: false
 
 invariants:
